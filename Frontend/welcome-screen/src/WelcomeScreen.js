@@ -9,7 +9,7 @@ const WelcomeScreen = () => {
       <nav className="navbar">
         <h2 className="navbar-title">Lwda Lehsun</h2>
         <ul className="navbar-links">
-          <li><Link to="/">Home</Link></li>
+          <li><Link to="/">Sign In/Sign Up</Link></li>
           <li><Link to="/home">About</Link></li>
         </ul>
       </nav>
