@@ -1,0 +1,115 @@
+/* src/WelcomeScreen.css */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.welcome-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #ad5389;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.navbar {
+  position: absolute;
+  top: 10px;
+  width: 90%;
+  padding: 10px 20px; /* Reduced padding for a thinner navbar */
+  background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+  display: flex;
+  justify-content: flex-start; /* Align items to the left */
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Add shadow for depth */
+  border-radius: 15px
+}
+
+.navbar-title {
+  margin: 0;
+  font-size: 1.5rem; /* Slightly larger font size */
+  color: whitesmoke; /* Bright color for the title */
+  margin-right: auto; /* Push the title to the left */
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-links li {
+  display: inline;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold; /* Make links bold */
+  transition: color 0.3s, transform 0.3s; /* Add transition for hover effect */
+}
+
+.navbar-links a:hover {
+  color: #ffeb3b; /* Highlight color on hover */
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.welcome-title {
+  font-size: 3rem;
+  margin: 0;
+  animation: scale-in-center 1s ease-in-out forwards;
+}
+
+.welcome-subtitle {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out forwards 0.5s;
+}
+
+.welcome-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.welcome-button:hover {
+  background-color: white; 
+  color: black;/* Lighter shade on hover */
+}
+
+@keyframes scale-in-center {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
