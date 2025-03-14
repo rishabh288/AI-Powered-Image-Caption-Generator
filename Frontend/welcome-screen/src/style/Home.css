@@ -1,4 +1,5 @@
 /* src/Home.css */
+@import "tailwindcss";
 .home-container {
   display: flex;
   flex-direction: column;

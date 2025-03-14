@@ -1,15 +1,15 @@
-// src/WelcomeScreen.js
 import React from 'react';
-import { Link } from 'react-router-dom';
-import './WelcomeScreen.css';
+import { Link } from "react-router-dom";
+import '../style/WelcomeScreen.css';
 
 const WelcomeScreen = () => {
   return (
     <div className="welcome-container">
       <nav className="navbar">
-        <h2 className="navbar-title">Lwda Lehsun</h2>
+        <h2 className="navbar-title">Libra AI</h2>
         <ul className="navbar-links">
-          <li><Link to="/">Sign In/Sign Up</Link></li>
+          <li><Link to='/signup'>Sign Up</Link></li>
+          <li><Link to="/">LogIn</Link></li>
           <li><Link to="/home">About</Link></li>
         </ul>
       </nav>
