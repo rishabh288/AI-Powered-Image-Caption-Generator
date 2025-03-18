@@ -1,0 +1,39 @@
+.nav-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image{
+    border: 2px solid black;
+    border-radius: 50px;
+}
+
+.image {
+    position: relative;
+    border-radius: 50%;
+    padding: 5px;
+    background: linear-gradient(45deg, 
+        #FFD1DC, #FFDFD3, #D4A5A5, #A5D4C3, #FFB7C5, 
+        #FFD9E3, #E6C9A8, #A8D8EA, #FFCCE5, #D5AAFF, 
+        #A1C3D1, #D4E157, #B5EAD7, #FF9AA2, #FFDAC1, 
+        #FFB347, #E0BBE4, #C6DEF1, #F7D8BA, #D3B8AE
+    );
+    background-size: 600% 600%;
+    animation: borderRotate 8s linear infinite, glowEffect 2s ease-in-out infinite alternate;
+}
+
+@keyframes borderRotate {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes glowEffect {
+    from {
+        box-shadow: 0 0 5px rgba(255, 209, 220, 0.5), 0 0 10px rgba(255, 223, 211, 0.5);
+    }
+    to {
+        box-shadow: 0 0 15px rgba(212, 165, 165, 0.8), 0 0 20px rgba(165, 212, 195, 0.8);
+    }
+}

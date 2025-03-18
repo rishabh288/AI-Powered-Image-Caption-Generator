@@ -1,0 +1,71 @@
+/* Background Gradient */
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background: #ad5389;  /* Fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3c1053, #ad5389);
+    background: linear-gradient(to right, #3c1053, #ad5389);
+  }
+  
+  /* Form Box */
+  .signup-box {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+  }
+  
+  /* Heading */
+  .signup-box h2 {
+    margin-bottom: 20px;
+    color: #3c1053;
+  }
+  
+  /* Form Fields */
+  .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+  
+  /* Submit Button */
+  .signup-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    background: #3c1053;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .signup-btn:hover {
+    background: #ad5389;
+  }
+
+  .signup-login{
+    color: rgb(255, 81, 0);
+    cursor: pointer;
+    margin: 2px;
+
+  }
+  

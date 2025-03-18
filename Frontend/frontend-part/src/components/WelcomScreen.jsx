@@ -1,18 +1,12 @@
+//welcome screen component
+
 import React from 'react';
 import { Link } from "react-router-dom";
-import '../style/WelcomeScreen.css';
+import '../style/welcome.css';
 
 const WelcomeScreen = () => {
   return (
     <div className="welcome-container">
-      <nav className="navbar">
-        <h2 className="navbar-title">Libra AI</h2>
-        <ul className="navbar-links">
-          <li><Link to='/signup'>Sign Up</Link></li>
-          <li><Link to="/">LogIn</Link></li>
-          <li><Link to="/home">About</Link></li>
-        </ul>
-      </nav>
       <h1 className="welcome-title">Welcome to Our App!</h1>
       <p className="welcome-subtitle">We are glad to have you here.</p>
       <Link to="/home">
